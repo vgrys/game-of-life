@@ -20,6 +20,9 @@ import com.wakaleo.gameoflife.domain.Universe;
  */
 @Controller
 @RequestMapping("/game")
+
+// test new GIT hook
+
 public class GameController {
 	// For generating random thread sleep times
     private Random randomGenerator = new Random();
