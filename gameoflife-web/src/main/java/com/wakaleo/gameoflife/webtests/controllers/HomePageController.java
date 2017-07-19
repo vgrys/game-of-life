@@ -12,7 +12,7 @@ import org.springframework.web.servlet.ModelAndView;
  * Controller to navigate to the main page
  */
 @Controller
-//public class HomePageController {
+ublic class HomePageController {
     @RequestMapping("/")
     public ModelAndView index() {
         return new ModelAndView("home");
