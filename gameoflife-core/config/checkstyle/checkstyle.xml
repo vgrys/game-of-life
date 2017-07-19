@@ -10,9 +10,7 @@
     Description: 
 Slightly modified version of Sun Checks that better matches the default code formatter setting of Eclipse.
 -->
-<!--
      <module name="Checker">
--->
     <property name="severity" value="warning"/>
     <module name="TreeWalker">
         <property name="tabWidth" value="4"/>
