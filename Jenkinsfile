@@ -20,7 +20,7 @@ pipeline {
     }
 }
 =======
-    agent { 'maven:3.3.3' }
+    agent { maven 'maven:3.3.3' }
 >>>>>>> master
     stages {
         stage('build') {
