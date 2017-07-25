@@ -9,5 +9,10 @@ pipeline {
                 sh 'mvn --version'
 	  }
         }
+	stage ('testing') {
+	   steps {
+		sh 'make test'
+		}
+	}
     }
 }
