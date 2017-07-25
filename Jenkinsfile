@@ -1,9 +1,22 @@
 pipeline {
-<<<<<<< HEAD
-agent {
-    docker {
-        image 'maven:3.3.3'
-        args  '-v /tmp:/tmp'
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Building..'
+            }
+        }
+        stage('Test') {
+            steps {
+                echo 'Testing..'
+            }
+        }
+        stage('Deploy') {
+            steps {
+                echo 'Deploying....'
+            }
+        }
     }
 }
 =======
