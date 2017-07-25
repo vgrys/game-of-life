@@ -11,7 +11,7 @@ pipeline {
         }
 	stage ('testing') {
 	   steps {
-		sh 'pom.xml'
+		pom = readMavenPom file: 'pom.xml'
 		}
 	}
     }
