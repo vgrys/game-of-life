@@ -11,7 +11,7 @@ pipeline {
         }
 	stage ('testing') {
 	   steps {
-		sh 'make test'
+		sh 'pom.xml'
 		}
 	}
     }
