@@ -1,5 +1,5 @@
 node {
-    agent
+    ageny any
 	tools {
 	maven 'Default' 
 	}
