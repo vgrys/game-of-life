@@ -9,9 +9,10 @@ pipeline {
                 sh 'mvn --version'
 	  }
         }
-    	stage ('JUNIT')
-        always {
+    	stage ('JUNIT') {
+        steps {
             junit 'build/reports/**/*.xml'
         }
+	}
     }
 }
