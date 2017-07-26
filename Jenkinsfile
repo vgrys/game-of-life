@@ -1,5 +1,5 @@
-pipeline {
-    agent any
+node {
+    agent
 	tools {
 	maven 'Default' 
 	}
@@ -10,9 +10,6 @@ pipeline {
 	  }
         }
     	stage ('JUNIT') {
-        steps {
-            junit 'build/reports/**/*.xml'
-        }
 	}
     }
 }
