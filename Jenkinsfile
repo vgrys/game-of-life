@@ -9,10 +9,10 @@ pipeline {
                 sh 'mvn --version'
 	  }
         }
-	stage ('testing') {
-	   steps {
-		pom = readMavenPom file: 'pom.xml'
-		}
-	}
+    post {
+        always {
+            junit 'build/reports/**/*.xml'
+        }
+    }
     }
 }
