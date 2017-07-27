@@ -1,8 +1,9 @@
-pipeline {
-    agent any
-	tools {
-	maven 'Default' 
-	}
+#!/usr/bin/env groovy
+node {
+   def mvnHome
+   stage('Preparation') { // for display purposes
+      mvnHome = tool 'M3'
+   }
     stages {
          stage('Build') {
       		// Run the maven build
